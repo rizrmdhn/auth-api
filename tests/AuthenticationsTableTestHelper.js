@@ -17,7 +17,7 @@ const AuthenticationsTableTestHelper = {
             values: [token],
         };
 
-        const result = pool.query(query);
+        const result = await pool.query(query);
 
         return result.rows;
     },
